@@ -1,6 +1,8 @@
 # encryption_vigenere_cipher
 Program to encrypt and break Vigenère ciphers
 
+Can break Vigenère ciphers of any language or key length, both known or unknown.
+
 <b>CaesarCipher</b> - Class provides an implementation of the Caesar cipher algorithm with public encrypt and decrypt methods.
 * uses object-oriented design, in which the constructor takes the key.
 * provides public methods to encrypt or decrypt one single character <b>encryptLetter</b> and <b>decryptLetter</b>.
