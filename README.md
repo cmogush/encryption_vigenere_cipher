@@ -1,6 +1,8 @@
 # encryption_vigenere_cipher
 Program to encrypt and break Vigenère ciphers of any language or key length, both known or unknown
 
+## Main Class
+
 <b>VigenereBreaker</b> - Class that breaks the Vigenere cipher of any key length or language, both known or unknown. Contains the following methods:
 * <b>sliceString</b> - has three parameters—a String *message*, representing the encrypted message, an integer *whichSlice*, indicating the index the slice should start from, and an integer *totalSlices*, indicating the length of the key. This method returns a String consisting of every totalSlices-th character from message, starting at the whichSlice-th character.
   * For example:
@@ -15,6 +17,8 @@ Program to encrypt and break Vigenère ciphers of any language or key length, bo
 * <b>breakVigenere</b> - Creates a new FileResource using its default constructor (which displays a dialog for you to select a file to decrypt). Uses the <b>asString</b> method to read the entire contents of the file into a String. Uses the <b>tryKeyLength</b> to find the key for the message read in. Create a new VigenereCipher, passing in the key that <b>tryKeyLength,</b> finds. Uses the VigenereCipher’s <b>decrypt</b> method to decrypt the encrypted message. Print out the decrypted message!
 * <b>mostCommonCharIn</b> - has one parameter—a HashSet of Strings *dictionary*. This method determines which character, of the letters in the language, appears most often in the words in *dictionary*. It returns this most commonly occurring character.
 * <b>breakForAllLangs</b> -has two parameters—a String *encrypted*, and a HashMap, called *languages*, mapping a String representing the name of a language to a HashSet of Strings containing the words in that language. Tries breaking the encryption for each language, and see which gives the best results!. Uses the <b>breakForLanguage</b> and <b>countWords</b> methods. Prints out the decrypted message as well as the language identified for the message.
+
+## Helper Classes
 
 <b>CaesarCipher</b> - Class provides an implementation of the Caesar cipher algorithm with public encrypt and decrypt methods.
 * uses object-oriented design, in which the constructor takes the key.
