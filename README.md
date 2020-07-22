@@ -2,7 +2,16 @@
 Program to encrypt and break Vigenère ciphers of any language or key length, both known or unknown
 
 <b>VigenereBreaker</b> - Class that breaks the Vigenere cipher of any key length or language, both known or unknown. Contains the following methods:
-
+* <b>sliceString</b> - has three parameters—a String *message*, representing the encrypted message, an integer *whichSlice*, indicating the index the slice should start from, and an integer *totalSlices*, indicating the length of the key. This method returns a String consisting of every totalSlices-th character from message, starting at the whichSlice-th character.
+  * For example:
+  * sliceString("abcdefghijklm", 0, 3) should return "adgjm"
+  * sliceString("abcdefghijklm", 1, 3) should return "behk"
+  * sliceString("abcdefghijklm", 2, 3) should return "cfil"
+* <b>tryKeyLength</b> - takes three parameters—a String *encrypted* that represents the encrypted message, an integer *klength* that represents the key length, and a character *mostCommon* that indicates the most common character in the language of the message. Uses the CaesarCracker class, as well as the <b>sliceString</b> method, to find the shift for each index in the key. Returns the key.
+* <b>readDictionary</b> - 
+* <b>breakForAllLangs</b> - 
+* <b>breakVigenere</b> - Creates a new FileResource using its default constructor (which displays a dialog for you to select a file to decrypt). Uses the <b>asString</b> method to read the entire contents of the file into a String. Uses the <b>tryKeyLength</b> to find the key for the message read in. Create a new VigenereCipher, passing in the key that <b>tryKeyLength,/b> finds. Uses the VigenereCipher’s <b>decrypt</b> method to decrypt the encrypted message. Print out the decrypted message!
+* <b>
 
 <b>CaesarCipher</b> - Class provides an implementation of the Caesar cipher algorithm with public encrypt and decrypt methods.
 * uses object-oriented design, in which the constructor takes the key.
@@ -36,6 +45,8 @@ Contains the following methods:
 * <b>encrypt</b> - method that encrypts a String passed in and returns the encrypted message.
 * <b>decrypt</b> - method that decrypts a String passed in and returns the decrypted message.
 * <b>toString</b> - returns a String representing the key for this cipher.
+
+<b>Tester</b> - Class to test the classes and methods above.
 
 Links to exercises:
 * https://www.coursera.org/learn/java-programming-arrays-lists-data/supplement/od7mx/programming-exercise-known-language-and-key-length
