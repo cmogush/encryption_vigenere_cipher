@@ -1,7 +1,8 @@
 # encryption_vigenere_cipher
-Program to encrypt and break Vigenère ciphers
+Program to encrypt and break Vigenère ciphers of any language or key length, both known or unknown
 
-Can break Vigenère ciphers of any language or key length, both known or unknown.
+<b>VigenereBreaker</b> - Class that breaks the Vigenere cipher of any key length or language, both known or unknown. Contains the following methods:
+
 
 <b>CaesarCipher</b> - Class provides an implementation of the Caesar cipher algorithm with public encrypt and decrypt methods.
 * uses object-oriented design, in which the constructor takes the key.
@@ -35,3 +36,8 @@ Contains the following methods:
 * <b>encrypt</b> - method that encrypts a String passed in and returns the encrypted message.
 * <b>decrypt</b> - method that decrypts a String passed in and returns the decrypted message.
 * <b>toString</b> - returns a String representing the key for this cipher.
+
+Links to exercises:
+* https://www.coursera.org/learn/java-programming-arrays-lists-data/supplement/od7mx/programming-exercise-known-language-and-key-length
+* https://www.coursera.org/learn/java-programming-arrays-lists-data/supplement/B1ENJ/programming-exercise-unknown-key-length
+* https://www.coursera.org/learn/java-programming-arrays-lists-data/supplement/e5ZZK/programming-exercise-unknown-language-unknown-key-length
